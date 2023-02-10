@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alata', sans-serif;
+
+}
+header{
+    background-image: url('./assets/images/desktop/image-hero.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    object-fit: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 4% 8%;
+    
+    & section {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        & small {
+            font-size: 35px;
+            color: white;
+        }
+        & nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+            font-size: 20px;
+            color: white;
+        }
+    }
+    & div {
+        color: white;
+        border: 2px solid white;
+        height: 280px;
+        font-size: 35px;
+        width: 700px;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        margin-bottom: 8%;
+    }
+
+   
+
+
+
+   
+}

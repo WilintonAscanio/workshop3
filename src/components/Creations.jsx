@@ -20,7 +20,6 @@ const Creations = () => {
   const minWidth = 819;
   const handleChangeWidth = () => setWidth(window.innerWidth);
   window.addEventListener("resize", handleChangeWidth);
-  // window.removeEventListener("resize", handleChangeWidth);
     
   const creations = [
     {

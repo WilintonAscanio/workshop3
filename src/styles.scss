@@ -1,32 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Alata', sans-serif;
 
 }
-header{
+
+header {
     background-image: url('./assets/images/desktop/image-hero.jpg');
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100vh;
     object-fit: cover;
-    background-position:center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 4% 8%;
-    
+    padding: 4% 6%;
+
     & section {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         width: 100%;
 
         & small {
             font-size: 35px;
             color: white;
         }
+
         & nav ul {
             display: flex;
             list-style: none;
@@ -35,21 +39,256 @@ header{
             color: white;
         }
     }
+
     & div {
         color: white;
         border: 2px solid white;
-        height: 280px;
-        font-size: 35px;
+        height: 320px;
         width: 700px;
         display: flex;
         align-items: center;
-        padding-left: 40px;
-        margin-bottom: 8%;
+        padding: 40px;
+        margin-bottom: 5.5%;
+
+        & small {
+            font-size: 75px;
+
+        }
+    }
+}
+
+.main {
+    display: flex;
+    margin: 10%;
+    width: 80%;
+    height: 80vh;
+
+    &__left {
+        width: 70%;
+        height: 85vh;
+        background-image: url('./assets/images/desktop/image-interactive.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
-   
+    &__right {
+        width: 30%;
+        height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        & div {
+            background-color: white;
+            margin-left: -100px;
+            height: 340px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-left: 70px;
 
 
+            & small {
+                font-size: 45px;
+                margin-bottom: 20px;
+            }
 
-   
+            & p {
+                display: flex;
+                align-items: end;
+                font-size: 11px;
+                color: #9b9b9b;
+                height: 80px;
+            }
+        }
+
+    }
+}
+
+.creations {
+    // background-color: rebeccapurple;
+    width: 80%;
+    margin: 10%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+
+    &__title {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        & small {
+            font-size: 32px;
+        }
+
+        
+    }
+    &__button {
+        background-color: white;
+        width: 140px;
+        height: 35px;
+        border: 1px solid black;
+        cursor: pointer;
+
+        &:hover {
+            background-color: black;
+            color: white;
+            transition: background-color .5s;
+        }
+    }
+
+    &__cards {
+        margin-top: 10%;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: auto auto auto auto;
+
+        & div {
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 480px;
+            color: white;
+            display: flex;
+            align-items: end;
+
+            & small {
+                font-size: 30px;
+                margin-bottom: 13%;
+                width: 55%;
+                margin-left: 15%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            &:hover {
+                cursor: pointer;
+                opacity: .7;
+                color: rgb(238, 168, 87);
+                transition: opacity .5s;
+            }
+        }
+
+    }
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 4% 10%;
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        & small {
+            font-size: 20px;
+        }
+
+        & ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            font-size: 14px;
+            
+
+            & li {
+                position: relative;
+                cursor: pointer;
+
+                &:hover::after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    bottom: -5px;
+                    width: 60%;
+                    left: 20%;
+                    background-color: white;
+                }
+        }
+
+            }
+
+        
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        &__images {
+            height: 10px;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            align-items: end;
+            justify-content: end;
+        }
+        & small {
+            color: gray;
+        }
+    }
+}
+
+@media (max-width: 801px) {
+
+    .creations {
+        width: 90%;
+        margin: 5%;
+
+        &__title {
+            justify-content: center;
+        }
+
+        &__cards {
+
+            grid-template-columns: auto;
+
+            & div {
+                height: 150px;
+
+                & small {
+                    margin-bottom: 5%;
+                    margin-left: 5%;
+                    width: 28%;
+                    font-size: 18px;
+                }
+
+            }
+        }
+
+        &__button {
+            align-self: center;
+            margin-top: 5%;
+        }
+       
+    }
+    .footer{
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+
+        &__nav ul{
+            flex-direction: column;
+        }
+        &__logo{
+
+            &__images {
+            justify-content: center;
+
+            }
+        }
+    }
+
 }

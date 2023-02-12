@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Header = () => {
+const Header = (props) => {
+
     return (
         <>
             <header>
@@ -8,18 +9,18 @@ const Header = () => {
                     <small>loopstudios</small>
                     <nav>
                         <ul>
-                            <li>About</li>
-                            <li>Careers</li>
-                            <li>Events</li>
-                            <li>Products</li>
-                            <li>Support</li>
+                            {props.list.map((element, index) => (
+                                <li key={index}>
+                                    {element.text}</li>
+
+                            ))}
                         </ul>
                     </nav>
                 </section>
                 <div>
-                    <h1>INMERSIVE <br />
+                    <small>IMMERSIVE <br />
                         EXPERIENCES <br />
-                        THAT DELIVER</h1>
+                        THAT DELIVER</small>
                 </div>
 
             </header>

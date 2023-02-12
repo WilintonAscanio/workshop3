@@ -63,7 +63,7 @@ header {
     }
 }
 
-body {
+.body {
     & section {
 
 
@@ -75,7 +75,6 @@ body {
             object-fit: cover;
             margin-top: 130px;
             margin-left: 130px;
-            // background-position:center;
             background-repeat: no-repeat;
             background-size: 670px;
             padding: 4% 8%;
@@ -99,7 +98,7 @@ body {
             }
 
             & .pAbout {
-                font-family:'Alata', sans-serif;
+                font-family: 'Alata', sans-serif;
                 color: #939393;
                 font-size: 14px;
             }
@@ -127,8 +126,9 @@ body {
             font-size: 32px;
         }
 
-        
+
     }
+
     &__button {
         background-color: white;
         width: 140px;
@@ -203,7 +203,7 @@ body {
             gap: 20px;
             list-style: none;
             font-size: 14px;
-            
+
 
             & li {
                 position: relative;
@@ -218,12 +218,13 @@ body {
                     left: 20%;
                     background-color: white;
                 }
-        }
-
             }
 
-        
+        }
+
+
     }
+
     &__logo {
         display: flex;
         flex-direction: column;
@@ -237,7 +238,25 @@ body {
             gap: 10px;
             align-items: end;
             justify-content: end;
+
+            & figure {
+                position: relative;
+                cursor: pointer;
+
+                &:hover::after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    bottom: -5px;
+                    width: 60%;
+                    left: 20%;
+                    background-color: white;
+                }
+
+            }
+
         }
+
         & small {
             color: gray;
         }
@@ -275,20 +294,22 @@ body {
             align-self: center;
             margin-top: 5%;
         }
-       
+
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
         text-align: center;
         gap: 25px;
 
-        &__nav ul{
+        &__nav ul {
             flex-direction: column;
         }
-        &__logo{
+
+        &__logo {
 
             &__images {
-            justify-content: center;
+                justify-content: center;
 
             }
         }

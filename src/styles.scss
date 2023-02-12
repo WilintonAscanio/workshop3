@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alata&family=Barlow&family=Fraunces:opsz@9..144&family=Josefin+Sans:wght@200;300&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alata', sans-serif;
 
 }
 
@@ -27,83 +27,86 @@ header {
         width: 100%;
 
         & small {
-            font-size: 35px;
-            color: white;
+            color: #fff;
+            display: flex;
+            font-family: 'Alata', sans-serif;
+            font-size: 40px;
         }
 
         & nav ul {
             display: flex;
             list-style: none;
             gap: 20px;
-            font-size: 20px;
             color: white;
+        }
+
+        & nav li {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Josefin Sans', sans-serif;
         }
     }
 
     & div {
         color: white;
         border: 2px solid white;
-        height: 320px;
-        width: 700px;
+        height: 280px;
+        width: 590px;
         display: flex;
         align-items: center;
         padding: 40px;
-        margin-bottom: 5.5%;
+        margin-bottom: 8%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 58px;
+        gap: 10px;
 
-        & small {
-            font-size: 75px;
-
-        }
     }
 }
 
-.main {
-    display: flex;
-    margin: 10%;
-    width: 80%;
-    height: 80vh;
+body {
+    & section {
 
-    &__left {
-        width: 70%;
-        height: 85vh;
-        background-image: url('./assets/images/desktop/image-interactive.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    &__right {
-        width: 30%;
-        height: 85vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
 
         & div {
-            background-color: white;
-            margin-left: -100px;
-            height: 340px;
+            background-image: url(./assets/images/desktop/image-interactive.jpg);
             display: flex;
             flex-direction: column;
-            justify-content: end;
-            padding-left: 70px;
-
-
-            & small {
-                font-size: 45px;
-                margin-bottom: 20px;
-            }
-
-            & p {
-                display: flex;
-                align-items: end;
-                font-size: 11px;
-                color: #9b9b9b;
-                height: 80px;
-            }
+            height: 100vh;
+            object-fit: cover;
+            margin-top: 130px;
+            margin-left: 130px;
+            // background-position:center;
+            background-repeat: no-repeat;
+            background-size: 670px;
+            padding: 4% 8%;
         }
 
+        & article {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: #fff;
+            padding-top: 100px;
+            padding-left: 50px;
+            top: 890px;
+            left: 650px;
+            width: 470px;
+
+            & .titleAbout {
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 46px;
+                padding-bottom: 30px;
+            }
+
+            & .pAbout {
+                font-family:'Alata', sans-serif;
+                color: #939393;
+                font-size: 14px;
+            }
+        }
     }
 }
+
 
 .creations {
     // background-color: rebeccapurple;

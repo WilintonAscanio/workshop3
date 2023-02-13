@@ -273,11 +273,18 @@ header {
         }
     }
 }
+.hidden {
+    display: none;
+}
 
 @media (max-width: 801px) {
 
     header {
         background-image: url(./assets/images/mobile/image-hero.jpg);
+
+        & section nav ul {
+            display: none;
+        }
     }
 
     .body {
@@ -361,5 +368,21 @@ header {
             }
         }
     }
+    .hidden {
+        display: block;
+    }
 
+}
+@media (max-width: 659px){
+    header {
+        & div {
+            width: 100%;
+            font-size: 40px;
+            justify-content: center;
+            margin-bottom: 100px;
+
+
+        }
+
+    }
 }

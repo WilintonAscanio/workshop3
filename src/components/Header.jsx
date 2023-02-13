@@ -1,4 +1,5 @@
 import React from 'react'
+import hamburguer from '../assets/images/icon-hamburger.svg'
 
 const Header = (props) => {
 
@@ -16,6 +17,9 @@ const Header = (props) => {
                         ))}
                     </ul>
                 </nav>
+                <figure className='hidden'>
+                    <img src={hamburguer} alt="hamburguer" />
+                </figure>
             </section>
             <div>
                 <p>IMMERSIVE EXPERIENCES THAT DELIVER</p>

@@ -12,46 +12,42 @@ const Footer = (props) => {
       logo: fb
     },
     {
-      id : 2,
+      id: 2,
       logo: tw,
     },
     {
-      id : 3,
-      logo : pinterest
+      id: 3,
+      logo: pinterest
     },
     {
-      id : 4,
-      logo : ig
+      id: 4,
+      logo: ig
     },
 
-
-
-
-
-
   ]
+
   return (
     <article className='footer'>
       <div className='footer__nav'>
         <small>loopstudios</small>
         <ul>
-        {props.list.map((element, index) => (
-          <li key={index}>{element.text}</li>
-        ))}
-      </ul>
+          {props.list.map((element, index) => (
+            <li key={index}>{element.text}</li>
+          ))}
+        </ul>
       </div>
       <div className='footer__logo'>
         <section className='footer__logo__images'>
-        {logos.map((element, index) => (
-          <figure key={index}>
-            <img src={element.logo} />
-          </figure>
-        ))}
+          {logos.map((element, index) => (
+            <figure key={index}>
+              <img src={element.logo} />
+            </figure>
+          ))}
         </section>
         <small>© 2021 Loopstudios. All rights reserved.</small>
 
       </div>
-      
+
 
     </article>
   )

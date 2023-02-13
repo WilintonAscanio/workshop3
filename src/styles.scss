@@ -9,6 +9,7 @@
 }
 
 header {
+
     background-image: url('./assets/images/desktop/image-hero.jpg');
     display: flex;
     flex-direction: column;
@@ -44,6 +45,21 @@ header {
             text-decoration: none;
             color: #fff;
             font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                bottom: -5px;
+                width: 60%;
+                left: 20%;
+                background-color: white;
+
+            }
         }
     }
 
@@ -64,57 +80,55 @@ header {
 }
 
 .body {
-    & section {
+    display: flex;
+    padding: 10%;
 
+    & div {
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
+        width: 70%;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: 665px;
+    }
 
-        & div {
-            background-image: url(./assets/images/desktop/image-interactive.jpg);
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            object-fit: cover;
-            margin-top: 130px;
-            margin-left: 130px;
-            background-repeat: no-repeat;
-            background-size: 670px;
-            padding: 4% 8%;
+    & article {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: 50%;
+        height: 68vh;
+        justify-content: end;
+
+        & section {
+            margin-left: -22%;
+            background-color: white;
+            height: 282px;
+            padding-top: 17%;
+            padding-left: 50px;
+
         }
 
-        & article {
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            background-color: #fff;
-            padding-top: 100px;
-            padding-left: 50px;
-            top: 890px;
-            left: 650px;
-            width: 470px;
+        & .titleAbout {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 46px;
+            padding-bottom: 30px;
+        }
 
-            & .titleAbout {
-                font-family: 'Josefin Sans', sans-serif;
-                font-size: 46px;
-                padding-bottom: 30px;
-            }
-
-            & .pAbout {
-                font-family: 'Alata', sans-serif;
-                color: #939393;
-                font-size: 14px;
-            }
+        & .pAbout {
+            font-family: 'Alata', sans-serif;
+            color: #939393;
+            font-size: 14px;
         }
     }
 }
 
 
 .creations {
-    // background-color: rebeccapurple;
     width: 80%;
-    margin: 10%;
+    margin: 0 10% 10% 10%;
     display: flex;
     flex-direction: column;
     height: 100%;
-
 
     &__title {
         width: 100%;
@@ -125,8 +139,6 @@ header {
         & small {
             font-size: 32px;
         }
-
-
     }
 
     &__button {
@@ -204,7 +216,6 @@ header {
             list-style: none;
             font-size: 14px;
 
-
             & li {
                 position: relative;
                 cursor: pointer;
@@ -264,6 +275,42 @@ header {
 }
 
 @media (max-width: 801px) {
+
+    header {
+        background-image: url(./assets/images/mobile/image-hero.jpg);
+    }
+
+    .body {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+        & div {
+            background-image: url(./assets/images/mobile/image-interactive.jpg);
+            width: 100%;
+            height: 50vh;
+            background-size: 100%;
+        }
+
+        & article {
+            width: 100%;
+            justify-content: start;
+            text-align: center;
+
+            & section {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+                padding: 10%;
+
+                & .titleAbout {
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+
 
     .creations {
         width: 90%;

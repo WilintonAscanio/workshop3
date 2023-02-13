@@ -1,32 +1,35 @@
 import React from 'react'
 import hamburguer from '../assets/images/icon-hamburger.svg'
+import close from '../assets/images/icon-close.svg'
 
 const Header = (props) => {
 
     return (
         <>
-        <header>
-            <section>
-                <small>loopstudios</small>
-                <nav>
-                    <ul>
-                        {props.list.map((element, index) => (
-                            <li key={index}>
-                                {element.text}</li>
+            <header>
+                <section>
+                    <small>loopstudios</small>
+                    <nav>
+                        <ul>
+                            {props.list.map((element, index) => (
+                                <li key={index}>
+                                    {element.text}</li>
 
-                        ))}
-                    </ul>
-                </nav>
-                <figure className='hidden'>
-                    <img src={hamburguer} alt="hamburguer" />
-                </figure>
-            </section>
-            <div>
-                <p>IMMERSIVE EXPERIENCES THAT DELIVER</p>
-            </div>
+                            ))}
+                        </ul>
+                    </nav>
+                    <figure className='hidden'>
+                        <input type="checkbox" className='checkbox' />
+                            <i class="icons fi fi-br-menu-burger"></i>
+                            <i class="icons fi fi-br-cross"></i>
+                    </figure>
+                </section>
+                <div>
+                    <p>IMMERSIVE EXPERIENCES THAT DELIVER</p>
+                </div>
 
-        </header>
-    </>
+            </header>
+        </>
     )
 }
 

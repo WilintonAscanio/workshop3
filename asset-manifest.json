@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/workshop3/static/css/main.e25a40fe.css",
-    "main.js": "/workshop3/static/js/main.94146c52.js",
-    "static/media/image-hero.jpg": "/workshop3/static/media/image-hero.3de81110dee4f75f44f9.jpg",
+    "main.css": "/workshop3/static/css/main.051b6a2b.css",
+    "main.js": "/workshop3/static/js/main.a64310d5.js",
+    "static/media/image-hero.jpg": "/workshop3/static/media/image-hero.9b5aacead42e955824d3.jpg",
     "static/media/image-from-above.jpg": "/workshop3/static/media/image-from-above.f316f3f3afc353415f71.jpg",
-    "static/media/image-interactive.jpg": "/workshop3/static/media/image-interactive.1d330522c9ca6cf07a9c.jpg",
+    "static/media/image-interactive.jpg": "/workshop3/static/media/image-interactive.d6a3949b27bb7a0c79c6.jpg",
     "static/media/image-curiosity.jpg": "/workshop3/static/media/image-curiosity.7f14665a1469d012697f.jpg",
     "static/media/image-soccer-team.jpg": "/workshop3/static/media/image-soccer-team.18a63d8df06f1baa727f.jpg",
     "static/media/image-night-arcade.jpg": "/workshop3/static/media/image-night-arcade.a4f25d3b0c5db392403a.jpg",
@@ -17,11 +17,11 @@
     "static/media/icon-twitter.svg": "/workshop3/static/media/icon-twitter.5dc7711ff2433b3b89ee7742a407e3bd.svg",
     "static/media/icon-facebook.svg": "/workshop3/static/media/icon-facebook.e9773e52bc64ea377cb95af7ccb6877e.svg",
     "index.html": "/workshop3/index.html",
-    "main.e25a40fe.css.map": "/workshop3/static/css/main.e25a40fe.css.map",
-    "main.94146c52.js.map": "/workshop3/static/js/main.94146c52.js.map"
+    "main.051b6a2b.css.map": "/workshop3/static/css/main.051b6a2b.css.map",
+    "main.a64310d5.js.map": "/workshop3/static/js/main.a64310d5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e25a40fe.css",
-    "static/js/main.94146c52.js"
+    "static/css/main.051b6a2b.css",
+    "static/js/main.a64310d5.js"
   ]
 }

@@ -20,8 +20,8 @@ const Header = (props) => {
                     </nav>
                     <figure className='hidden'>
                         <input type="checkbox" className='checkbox' />
-                            <i class="icons fi fi-br-menu-burger"></i>
-                            <i class="icons fi fi-br-cross"></i>
+                            <i className="icons fi fi-br-menu-burger"></i>
+                            <i className="icons fi fi-br-cross"></i>
                     </figure>
                 </section>
                 <div>

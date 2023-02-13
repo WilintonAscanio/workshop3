@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alata&family=Barlow&family=Fraunces:opsz@9..144&family=Josefin+Sans:wght@200;300&family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Alata', sans-serif;
 
 }
 
 header {
+
     background-image: url('./assets/images/desktop/image-hero.jpg');
     display: flex;
     flex-direction: column;
@@ -27,92 +28,107 @@ header {
         width: 100%;
 
         & small {
-            font-size: 35px;
-            color: white;
+            color: #fff;
+            display: flex;
+            font-family: 'Alata', sans-serif;
+            font-size: 40px;
         }
 
         & nav ul {
             display: flex;
             list-style: none;
             gap: 20px;
-            font-size: 20px;
             color: white;
+        }
+
+        & nav li {
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+
+            &:hover::after {
+                content: "";
+                position: absolute;
+                height: 2px;
+                bottom: -5px;
+                width: 60%;
+                left: 20%;
+                background-color: white;
+
+            }
         }
     }
 
     & div {
         color: white;
         border: 2px solid white;
-        height: 320px;
-        width: 700px;
+        height: 280px;
+        width: 590px;
         display: flex;
         align-items: center;
         padding: 40px;
-        margin-bottom: 5.5%;
+        margin-bottom: 8%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 58px;
+        gap: 10px;
 
-        & small {
-            font-size: 75px;
-
-        }
     }
 }
 
-.main {
+.body {
     display: flex;
-    margin: 10%;
-    width: 80%;
-    height: 80vh;
+    padding: 10%;
 
-    &__left {
+    & div {
+        background-image: url(./assets/images/desktop/image-interactive.jpg);
         width: 70%;
-        height: 85vh;
-        background-image: url('./assets/images/desktop/image-interactive.jpg');
-        background-size: cover;
+        object-fit: cover;
         background-repeat: no-repeat;
+        background-size: 665px;
     }
 
-    &__right {
-        width: 30%;
-        height: 85vh;
+    & article {
         display: flex;
         flex-direction: column;
+        background-color: white;
+        width: 50%;
+        height: 68vh;
         justify-content: end;
 
-        & div {
+        & section {
+            margin-left: -22%;
             background-color: white;
-            margin-left: -100px;
-            height: 340px;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            padding-left: 70px;
+            height: 282px;
+            padding-top: 17%;
+            padding-left: 50px;
 
-
-            & small {
-                font-size: 45px;
-                margin-bottom: 20px;
-            }
-
-            & p {
-                display: flex;
-                align-items: end;
-                font-size: 11px;
-                color: #9b9b9b;
-                height: 80px;
-            }
         }
 
+        & .titleAbout {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 46px;
+            padding-bottom: 30px;
+        }
+
+        & .pAbout {
+            font-family: 'Alata', sans-serif;
+            color: #939393;
+            font-size: 14px;
+        }
     }
 }
 
+
 .creations {
-    // background-color: rebeccapurple;
     width: 80%;
-    margin: 10%;
+    margin: 0 10% 10% 10%;
     display: flex;
     flex-direction: column;
     height: 100%;
-
 
     &__title {
         width: 100%;
@@ -123,9 +139,8 @@ header {
         & small {
             font-size: 32px;
         }
-
-        
     }
+
     &__button {
         background-color: white;
         width: 140px;
@@ -200,7 +215,6 @@ header {
             gap: 20px;
             list-style: none;
             font-size: 14px;
-            
 
             & li {
                 position: relative;
@@ -215,12 +229,13 @@ header {
                     left: 20%;
                     background-color: white;
                 }
-        }
-
             }
 
-        
+        }
+
+
     }
+
     &__logo {
         display: flex;
         flex-direction: column;
@@ -234,14 +249,75 @@ header {
             gap: 10px;
             align-items: end;
             justify-content: end;
+
+            & figure {
+                position: relative;
+                cursor: pointer;
+
+                &:hover::after {
+                    content: "";
+                    position: absolute;
+                    height: 2px;
+                    bottom: -5px;
+                    width: 60%;
+                    left: 20%;
+                    background-color: white;
+                }
+
+            }
+
         }
+
         & small {
             color: gray;
         }
     }
 }
+.hidden {
+    display: none;
+}
 
 @media (max-width: 801px) {
+
+    header {
+        background-image: url(./assets/images/mobile/image-hero.jpg);
+
+        & section nav ul {
+            display: none;
+        }
+    }
+
+    .body {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+
+        & div {
+            background-image: url(./assets/images/mobile/image-interactive.jpg);
+            width: 100%;
+            height: 50vh;
+            background-size: 100%;
+        }
+
+        & article {
+            width: 100%;
+            justify-content: start;
+            text-align: center;
+
+            & section {
+                width: 100%;
+                margin-left: 0;
+                margin-top: 0;
+                padding: 10%;
+
+                & .titleAbout {
+                    font-size: 30px;
+                }
+
+            }
+        }
+    }
+
 
     .creations {
         width: 90%;
@@ -272,23 +348,41 @@ header {
             align-self: center;
             margin-top: 5%;
         }
-       
+
     }
-    .footer{
+
+    .footer {
         flex-direction: column;
         text-align: center;
         gap: 25px;
 
-        &__nav ul{
+        &__nav ul {
             flex-direction: column;
         }
-        &__logo{
+
+        &__logo {
 
             &__images {
-            justify-content: center;
+                justify-content: center;
 
             }
         }
     }
+    .hidden {
+        display: block;
+    }
 
+}
+@media (max-width: 659px){
+    header {
+        & div {
+            width: 100%;
+            font-size: 40px;
+            justify-content: center;
+            margin-bottom: 100px;
+
+
+        }
+
+    }
 }

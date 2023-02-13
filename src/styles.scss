@@ -44,6 +44,8 @@ header {
             text-decoration: none;
             color: #fff;
             font-family: 'Josefin Sans', sans-serif;
+            position: relative;
+            cursor: pointer;
         }
     }
 
@@ -264,6 +266,21 @@ header {
 }
 
 @media (max-width: 801px) {
+
+    header {
+        display: none;
+
+        section {
+            nav {
+                display: none;
+            }
+        }
+    }
+
+    .header{
+        background-color: aqua;
+    }
+
 
     .creations {
         width: 90%;

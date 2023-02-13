@@ -1,5 +1,13 @@
 import React from 'react'
 
+const Creations = () => {
+  const [width, setWidth] = React.useState(window.innerWidth);
+  const minWidth = 819;
+  const handleChangeWidth = () => setWidth(window.innerWidth);
+  window.addEventListener("resize", handleChangeWidth);
+
+}
+
 const Main = () => {
   return (
 <>

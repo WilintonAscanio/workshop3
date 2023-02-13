@@ -285,7 +285,56 @@ header {
         & section nav ul {
             display: none;
         }
+
+        & figure {
+            background-color: red;
+            position: relative;
+
+
+            & img {
+                position: absolute;
+                pointer-events: none;
+            }
+            & input {
+                position: absolute;
+                width: 20px;
+                opacity: 0;
+
+               
+                
+            }
+        }
     }
+    .checkbox, .icons{
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: -10px;
+        right: 12px;
+        cursor: pointer;
+    
+    }
+    .icons{
+        pointer-events: none;
+        font-size: 30px;
+        color: white;
+    
+    }
+    .checkbox{
+        opacity: 0;
+    }
+    
+    .fi-br-cross{
+        display: none;
+    }
+    .checkbox:checked ~ .fi-br-menu-burger{
+        display: none;
+    
+    }
+    .checkbox:checked ~ .fi-br-cross{
+        display: block;
+    }
+    
 
     .body {
         flex-direction: column;
@@ -375,6 +424,9 @@ header {
 }
 @media (max-width: 659px){
     header {
+        & section small {
+            font-size: 30px;
+        }
         & div {
             width: 100%;
             font-size: 40px;
